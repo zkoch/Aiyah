@@ -1,1 +1,9 @@
-What a schweet readme.
+AIYAH is a project I started that I hope to eventually turn into a Safari Plugin. It scans a page looking for Chinese characters and then allows the user
+to mouseover a chinese character (or word of two or more characters) and see the resulting definition. Still more work to do, and there are things that
+probably should be done differently but here it is.
+
+CH_DIC.js -> JS Object that contains the dictionary
+
+DictController.js -> Two classes that handle the presentation layer and the logic layer for communicating with the dictionary (sort of)
+
+Questions/Problems/Comments: zachkoch at gmail dot com
