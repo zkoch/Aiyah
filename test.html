@@ -1,0 +1,70 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=unicode">
+    <style type="text/css">
+    
+    	body {
+    	
+    	font-size: 40px;
+    	
+    	}
+    	
+		.CHINESE_HOVER_CLASS {
+			background: yellow;
+		}
+		
+		#show_pop {
+			position: absolute;
+			-webkit-border-radius: 5px;
+			background: #282828;
+			width: 350px;
+			padding: 7px;
+			color: #FFF;
+			display: none;
+			z-index: 99999;
+		}
+		
+		#show_pop .han {
+			font-size: 20px;
+		}
+		
+		#show_pop .pinyin {
+			font-size: 20px;
+		}
+		
+		#show_pop .translation {
+			font-size: 16px;
+		}
+    </style>
+    <script src="CH_DIC.js"></script>
+    <script src="DictController.js"></script>
+  </head>
+  <body>
+    j&#236; y&#236; b&#224;ng<br />
+    你好
+    女人
+    
+    一个字符串数组。该数组是通过在 separator 指定的边界处将字符串 stringObject 分割成子串创建的。返回的数组中的字串不包括 separator 自身。
+但是，如果 separator 是包含子表达式的正则表达式，<a href="#">那么</a>返回的数组中包括与这些子表达式匹配的字串（但不包括与整个正则表达式匹配的文本）。
+    
+    <div id="show_pop">
+    
+    </div>
+    
+    <script text="text/javascript">
+      
+      var b = document.body;
+      
+      var DIC = new CH_DIC();
+    	
+      var DIC_CONTROLLER = new DicController(DIC);
+      
+      var LAYOUT = new LayoutController("show_pop");
+                      
+      window.onload = function() {
+        LAYOUT.traverseAllChildren(b);
+      }
+      
+    </script>
+  </body>
+</html>
